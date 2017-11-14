@@ -1,0 +1,16 @@
+{
+    "name": "meminuygur/pokerchance",
+    "description": "Poker Chance Tester",
+    "type": "project",
+    "require": {
+        "meminuygur/poker": "^1.2",
+        "phpunit/phpunit": "5.2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "meminuygur",
+            "email": "info@magefly.com"
+        }
+    ]
+}
