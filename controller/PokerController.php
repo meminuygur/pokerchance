@@ -17,7 +17,7 @@ class PokerController extends Controller
 
         $game = new Meminuygur\Poker\PokerGame();
 
-        $game->start($cards, $_POST['value']);
+        $game->start($cards, $_POST['value'], $_POST['suit']);
 
         return $this->view('poker/start');
 
@@ -34,6 +34,10 @@ class PokerController extends Controller
         $data = [
             'chance'        => $chance,
             'is_finished'   => $game->play(),
+            'selected_card' => [
+                'suit' => $game->player_model->getSelectedSuit(),
+                'value' => $game->player_model->getSelectedValue(),
+            ]
         ];
 
         return $this->view('poker/draft',$data);

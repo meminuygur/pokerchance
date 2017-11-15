@@ -8,24 +8,30 @@
 <div class="row">
     <div class="container">
 
-        <div class="card-select panel panel-default">
 
-            <div class="panel-body">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card-select panel panel-default " style="margin-top: 40px">
 
-                <?php if( !$is_finished ) :?>
+                <div class="panel-heading"><?php echo $selected_card['suit'] . $selected_card['value']; ?></div>
+                <div class="panel-body">
 
-                <form action="/poker/draft" class="form-control" method="post">
-                    <input type="submit" class="button button-large button-success" value="Draft a Card">
-                </form>
-                    <?php echo 'Chance :'.$chance; ?>
-                <?php else:?>
-                    <p>Got It, the chance was <?php echo $chance ?></p>
-                    <a href="/poker/index">Restart Game</a>
-                <?php endif?>
+                    <?php if (!$is_finished) : ?>
 
+                        <form action="/poker/draft" class="" method="post">
+                            <input type="submit" class="btn btn-large btn-success" value="Draft a Card">
+                        </form>
+
+                        <?php echo 'Chance :' . $chance; ?>
+
+                    <?php else: ?>
+                        <p>Got It, the chance was <?php echo $chance ?></p>
+                        <a href="/poker/index" class="btn btn-success btn-lg">Restart Game</a>
+                    <?php endif ?>
+
+
+                </div>
 
             </div>
-
         </div>
     </div>
 </div>

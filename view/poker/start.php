@@ -8,15 +8,18 @@
 <div class="row">
     <div class="container">
 
-        <div class="card-select panel panel-default">
+        <div class="col-md-6 col-md-offset-3">
+
+            <div class="card-select panel panel-default " style="margin-top: 40px">
 
             <div class="panel-body">
 
-                <a href="/poker/draft">Start Poker</a>
+                <a class="btn-block btn btn-info btn-lg" href="/poker/draft">Start Poker</a>
             </div>
 
         </div>
-    </div>
+        </div>
+        gitgitdsadsa
 </div>
 
 </body>
