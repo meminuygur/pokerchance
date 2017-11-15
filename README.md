@@ -1,4 +1,9 @@
 #Poker Chance App with Basic MVC
 
 ## Installation
-* After installation run composer install or update to installing meminuygur/poker main poker library
+```
+composer create-project meminuygur/pokerchance
+```
+
+##ScreenShot
+![screenshot](https://image.prntscr.com/image/wPm-yhKXQt_47rf8NkIIZg.png)
